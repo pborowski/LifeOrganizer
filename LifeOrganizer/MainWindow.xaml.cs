@@ -28,6 +28,7 @@ namespace LifeOrganizer
             ToDoFile_Read();
             DoingFile_Read();
             DoneFile_Read();
+            MessageBox.Show("Test commit 1");
         }
         //"C:\\Users\\Pawel\\ToDo.txt"
         private void ToDoFile_Write()
