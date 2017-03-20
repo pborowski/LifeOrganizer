@@ -1,0 +1,23 @@
+﻿<Window x:Class="LifeOrganizer.Edit_Task_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit_Task_Window" Height="300" Width="300">
+    <DockPanel>
+        <Label FontSize="20" HorizontalAlignment="Left" DockPanel.Dock="Top" >Nazwa:</Label>
+        <TextBox Name="Textbox_Add_Title" Height="Auto"  DockPanel.Dock="Top"></TextBox>
+        <Grid DockPanel.Dock="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label FontSize="20"  Grid.Column="0" HorizontalAlignment="Left" DockPanel.Dock="Top" >Deadline</Label>
+            <DatePicker Name="DatePicker_Add_Date" HorizontalAlignment="Left" Grid.Column="1" Margin =" 5"></DatePicker>
+        </Grid>
+        <Label FontSize="20" HorizontalAlignment="Left" Height="Auto" DockPanel.Dock="Top" >Opis:</Label>
+        <TextBox Name="Textbox_Add_Description"  Height="70" DockPanel.Dock="Top" TextWrapping="Wrap"></TextBox>
+        <Button Name="Button_Add_Task_Confirm"  Click="Button_Add_Task_Confirm_Click" Height="30" Width="80" DockPanel.Dock="Bottom" FontSize="12" HorizontalAlignment="Right" Margin="10" Padding="5" IsDefault="True">Dodaj</Button>
+    </DockPanel>
+</Window>
